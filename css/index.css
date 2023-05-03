@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar section */
+.navbar-bg {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.nav1 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.nav1 ul {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.nav1 ul li {
+    list-style: none;
+    font: 300 0.8vmax sans-serif;
+}
+
+.nav1 ul li:last-child {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.nav2 {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 ul {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav2 ul li {
+    list-style: none;
+    font: 300 0.8vmax sans-serif;
+}
+
+/* welcome section */
+.welcome-bg {
+    width: 100%;
+    height: 67vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container {
+    width: 96%;
+    height: 67vh;
+    display: flex;
+}
+
+/* TeachGuru section */
+.teach-bg {
+    background-color: white;
+    width: 90%;
+    left: 5%;
+    transform: translateY(-2vmax);
+    padding: 1vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-card .tech-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.tech-card .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tech-card .details p:first-child {
+    font-weight: 300;
+    padding: 0.2vmax;
+    font-size: 1.1vmax;
+}
+
+.tech-card .details p:last-child {
+    font: 300 1vmax sans-serif;
+    padding: 0.2vmax;
+}
+
+.tech-card .talk {
+    width: 70%;
+    background-color: #F23E36;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5vmax;
+    margin-top: 0.5vmax;
+    border-radius: 10px;
+    color: white;
+}
+
+.tech-card .talk h4 {
+    font: 600 1vmax sans-serif;
+    color: white;
+}
+
+.tech-card:nth-child(6) .talk,
+.tech-card:nth-child(7) .talk {
+    width: 50%;
+}
+
+.right {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4E59AD;
+    font: 600 1.3vmax sans-serif;
+}
+
+/* Assessment section */
+.assess-bg {
+    margin-top: 15vmax;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.assess-heading {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 28vh;
+}
+
+.assess-heading h1 {
+    font: 600 3vmax sans-serif;
+    padding: 1vmax;
+    color: #4E59AD;
+    text-align: center;
+}
+
+.assess-btn {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.assess-btn button {
+    padding: 0.7vmax;
+    width: 40%;
+    font: 600 1vmax sans-serif;
+    background: white;
+    outline: none;
+    border: none;
+}
+
+.assess-btn button:first-child {
+    background: #F23E36;
+    color: white;
+    width: 30%;
+}
+
+.assess-btn button:last-child {
+    border: 1px solid gray;
+}
+
+.assess-details {
+    padding: 1vmax;
+}
+
+.assess-details p {
+    font: 300 1.1vmax sans-serif;
+    padding: 0.3vmax;
+    color: gray;
+}
+
+.assess-container {
+    width: 100%;
+    padding: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assess-card {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.assess-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5vmax 0;
+    box-shadow: 0 10px 20px gray;
+}
+
+.card .assess-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin: 0 1vmax;
+    margin-top: 1vmax;
+}
+
+.card .assess-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card .assess-image h1 {
+    font: 600 1.4vmax sans-serif;
+    padding: 1vmax;
+}
+
+.card .assess-details {
+    width: 100%;
+    padding: 1vmax;
+}
+
+.card .assess-details h2 {
+    font: 300 1.3vmax sans-serif;
+    padding: 0.3vmax;
+    color: gray;
+}
+
+.assess-btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.assess-btn2 button {
+    width: 70%;
+    padding: 1vmax;
+    background: #F23E36;
+    color: white;
+    border: none;
+    outline: none;
+    font: 600 1vmax sans-serif;
+    margin-bottom: 1vmax;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* navbar section */
+    .navbar-bg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 16vh;
+        background-color: white;
+    }
+
+    .nav1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav1 .logo {
+        display: flex;
+        height: 8vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav1 .logo img {
+        width: 250px;
+    }
+
+    .nav1 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        height: 5vh;
+    }
+
+    .nav1 ul li {
+        list-style: none;
+        font: 300 1.5vmax sans-serif;
+    }
+
+    .nav1 ul li:last-child {
+        text-decoration: underline;
+        cursor: pointer;
+        color: blue;
+    }
+
+    .nav2 {
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav2 ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav2 ul li {
+        list-style: none;
+        font: 300 1.5vmax sans-serif;
+    }
+
+    /* welcome section */
+    .welcome-container {
+        width: 90%;
+        height: 67vh;
+        display: flex;
+    }
+
+    /* TeachGuru section */
+    .teach-bg {
+        width: 100%;
+        /* background-color: white; */
+        transform: translateY(-50vmax);
+        padding: 5vmax;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        border-radius: 0px;
+        height: 200vh;
+        box-shadow: 0 0 0;
+    }
+
+    .left {
+        width: 100%;
+        padding: 1vmax;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tech-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1vmax;
+    }
+
+    .tech-card .tech-image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 2px solid black;
+    }
+
+    .tech-card .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tech-card .details p:first-child {
+        font-weight: 300;
+        padding: 0.2vmax;
+        font-size: 1.8vmax;
+    }
+
+    .tech-card .details p:last-child {
+        font: 300 1.4vmax sans-serif;
+        padding: 0.2vmax;
+    }
+
+    .tech-card .talk {
+        width: 70%;
+        background-color: #F23E36;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5vmax;
+        margin-top: 0.5vmax;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .tech-card .talk h4 {
+        font: 600 2vmax sans-serif;
+        color: white;
+    }
+
+    .tech-card:nth-child(6) .talk,
+    .tech-card:nth-child(7) .talk {
+        width: 70%;
+    }
+
+    .right {
+        width: 100%;
+        padding: 2vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 600 4vmax sans-serif;
+    }
+
+    /* Assessment section */
+    .assess-bg {
+        margin-top: 165vmax;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .assess-heading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 28vh;
+    }
+
+    .assess-heading h1 {
+        font: 600 3.5vmax sans-serif;
+        padding: 1vmax;
+        text-align: center;
+    }
+
+    .assess-btn {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .assess-btn button {
+        padding: 0.7vmax;
+        width: 40%;
+        font: 600 1.4vmax sans-serif;
+        background: white;
+        outline: none;
+        border: none;
+    }
+
+    .assess-btn button:first-child {
+        background: #F23E36;
+        color: white;
+        width: 30%;
+    }
+
+    .assess-btn button:last-child {
+        border: 1px solid gray;
+    }
+
+    .assess-details {
+        padding: 1vmax;
+    }
+
+    .assess-details p {
+        font: 300 1.3vmax sans-serif;
+        padding: 0.3vmax;
+        color: gray;
+    }
+
+    .assess-container {
+        width: 100%;
+        padding: 1vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .assess-card {
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .assess-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .card {
+        width: 100%;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0.5vmax 0;
+        box-shadow: 0 10px 20px gray;
+    }
+
+    .card .assess-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        margin: 0 1vmax;
+        margin-top: 1vmax;
+    }
+
+    .card .assess-image img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .card .assess-image h1 {
+        font: 600 1.4vmax sans-serif;
+        padding: 1vmax;
+    }
+
+    .card .assess-details {
+        width: 100%;
+        padding: 1vmax;
+    }
+
+    .card .assess-details h2 {
+        font: 300 1.3vmax sans-serif;
+        padding: 0.3vmax;
+        color: gray;
+    }
+
+    .assess-btn2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .assess-btn2 button {
+        width: 70%;
+        padding: 1vmax;
+        background: #F23E36;
+        color: white;
+        border: none;
+        outline: none;
+        font: 600 1vmax sans-serif;
+        margin-bottom: 1vmax;
+        border-radius: 10px;
+    }
+}
